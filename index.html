@@ -1,0 +1,667 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web server</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo" class="img-fluid">
+                </div>
+                <div class="line"></div>
+                <div class="menu-right">
+                    <ul>
+                        <li>Laboratorní regál Hostivař</li>
+                        <li>15:30</li>
+                        <li>03.05.2021</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-info">
+        <div class="container">
+            <div class="main-box">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <p>teplota: <span class="param">24,2°C</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <p>pH: <span class="param">5,5</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5">
+                        <p>výška hladiny: <span class="param">50cm</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <p>vlhkost: <span class="param">46%</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <p>EC: <span class="param">100</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <div class="container">
+            <div class="login-box">
+                <div>
+                    <p>přihlášení:</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="jméno">
+                    <input type="text" placeholder="heslo">
+                    <a href="#"><img src="img/form-submit.svg" alt="submit" class="img-fluid"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-box box-closed">
+                        <div class="box-head">
+                            <p class="box-headline">světla</p>
+                            <div class="box-head-hidden">
+                                <form class="controls">
+                                    <div class="switch-box">
+                                        <p>auto</p>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <p>man</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - ON:</p>
+                                        <input type="number" value="10" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - OFF:</p>
+                                        <input type="number" value="16" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2 d-none d-lg-block numbers">
+                                        <div class="sliders-number">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="sliders-number">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="sliders-number">
+                                            <p>3</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="sliders-section">
+                                            <p class="section-title">sekce AB</p>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="sliders-section ml-lg-auto">
+                                            <p class="section-title">sekce CD</p>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="sliders-box">
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">modrá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">bílá</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col">
+                                                    <form>
+                                                        <p class="slider-text">tmavě červená</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                                <div class="sliders-col col-gap">
+                                                    <form>
+                                                        <p class="slider-text">intenzita</p>
+                                                        <div class="range-box">
+                                                            <input type="range" value="50" class="range-slider">
+                                                        </div>
+                                                        <input type="number" class="green-input range-input" value="50">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-box box-closedt box-hnojeni">
+                        <div class="box-head">
+                            <p class="box-headline">hnojení</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-container">
+                                <form class="controls">
+                                    <div class="auto-box">
+                                        <p>EC</p>
+                                        <input type="number" value="10" class="green-input">
+                                        <p>mS/cm2</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>pH</p>
+                                        <input type="number" value="16" class="green-input">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-box box-closed">
+                        <div class="box-head">
+                            <p class="box-headline">zalévání</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-container">
+                                <div class="switches-section">
+                                    <div class="row">
+                                        <div class="col-6 col-lg-2 d-none d-lg-block">
+                                            <p class="zalevani">ovládání napouštěcího ventilu</p>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <p class="section-title">sekce A</p>
+                                            <form>
+                                                <div class="switches-row">
+                                                    <div class="switch-box">
+                                                        <p>auto</p>
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <p>man</p>
+                                                    </div>
+                                                    <div class="switch-box">
+                                                        <p>otev.</p>
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <p>zav.</p>
+                                                    </div>
+                                                </div>    
+                                            </form>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <p class="section-title">sekce B</p>
+                                            <form>
+                                                <div class="switches-row">
+                                                    <div class="switch-box">
+                                                        <p>auto</p>
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <p>man</p>
+                                                    </div>
+                                                    <div class="input-box">
+                                                        <input type="text" class="green-input" value="1:30">
+                                                    </div>
+                                                </div>       
+                                            </form>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <p class="section-title">sekce C</p>
+                                            <form>
+                                                <div class="switches-row">
+                                                    <div class="switch-box">
+                                                        <p>auto</p>
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <p>man</p>
+                                                    </div>
+                                                    <div class="input-box">
+                                                        <input type="text" class="green-input" value="1:30">
+                                                    </div>
+                                                </div>       
+                                            </form>
+                                        </div>
+                                        <div class="col-6 col-lg-2">
+                                            <p class="section-title">sekce D</p>
+                                            <form>
+                                                <div class="switches-row">
+                                                    <div class="switch-box">
+                                                        <p>auto</p>
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <p>man</p>
+                                                    </div>
+                                                    <div class="input-box">
+                                                        <input type="text" class="green-input" value="1:30">
+                                                    </div>
+                                                </div>       
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-box box-closed box-dmychadlo">
+                        <div class="box-head">
+                            <p class="box-headline">dmychadlo</p>
+                            <div class="box-head-hidden">
+                                <form class="controls">
+                                    <div class="switch-box">
+                                        <p>auto</p>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <p>man</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - ON:</p>
+                                        <input type="number" value="10" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - OFF:</p>
+                                        <input type="number" value="16" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-container">
+                                <div class="switches-section">
+                                    <form>
+                                        <div class="switches-row">
+                                            <div class="switch-box">
+                                                <p>auto</p>
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>man</p>
+                                            </div>
+                                            <div class="switch-box">
+                                                <p>on</p>
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>off</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-box box-closed box-dmychadlo">
+                        <div class="box-head">
+                            <p class="box-headline">ventilátory</p>
+                            <div class="box-head-hidden">
+                                <form class="controls">
+                                    <div class="switch-box">
+                                        <p>auto</p>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <p>man</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - ON:</p>
+                                        <input type="number" value="10" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                    <div class="auto-box">
+                                        <p>auto - OFF:</p>
+                                        <input type="number" value="16" class="green-input">
+                                        <p>h</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box-container">
+                                <div class="switches-section">
+                                    <form>
+                                        <div class="switches-row">
+                                            <div class="switch-box">
+                                                <p>auto</p>
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>man</p>
+                                            </div>
+                                            <div class="switch-box">
+                                                <p>on</p>
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <p>off</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-box box-closed">
+                        <div class="box-head">
+                            <p class="box-headline">míchadlo</p> <div class="box-head-hidden">
+                                <form class="controls">
+                                    <div class="auto-box mr-0">
+                                        <p>on</p>
+                                        <input type="number" value="10" class="green-input">
+                                        <p>off</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="box-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
